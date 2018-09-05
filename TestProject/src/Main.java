@@ -5,6 +5,6 @@ public class Main {
 		displayGreeting();
 	}
 	private static void displayGreeting() {
-		System.out.println("Hi, loser.");
+		System.out.println("Hi, buddy.");
 	}
 }
