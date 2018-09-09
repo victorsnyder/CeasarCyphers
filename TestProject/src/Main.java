@@ -6,7 +6,12 @@ public class Main {
 	}
 	private static void displayGreeting() {
 		String salute = "Hey buddy.";
-		int saluteLength = salute.length();
-		System.out.println(saluteLength);
+		// var assignment
+		salute = salute.replace("buddy","loser");
+		//used mutator "replace"
+		System.out.println(salute);
+		// print new string
+		System.out.println(salute.length());
+		//print length of string. 
 	}
 }
