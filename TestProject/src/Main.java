@@ -5,6 +5,7 @@ public class Main {
 		displayGreeting();
 	}
 	private static void displayGreeting() {
-		System.out.println("Hi, buddy.");
+		String salute = ("Hi, buddy.");
+		System.out.println(salute);
 	}
 }
