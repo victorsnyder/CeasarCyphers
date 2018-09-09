@@ -5,7 +5,8 @@ public class Main {
 		displayGreeting();
 	}
 	private static void displayGreeting() {
-		String salute = ("Hi, buddy.");
-		System.out.println(salute);
+		String salute = "Hey buddy.";
+		int saluteLength = salute.length();
+		System.out.println(saluteLength);
 	}
 }
