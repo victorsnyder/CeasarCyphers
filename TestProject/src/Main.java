@@ -8,7 +8,7 @@ public class Main {
 		String salute = "Hey buddy.";
 		// var assignment
 		salute = salute.replace("buddy","loser");
-		//used mutator "replace"
+		//used mutator "replace" to reassign the value of salute
 		System.out.println(salute);
 		// print new string
 		System.out.println(salute.length());
