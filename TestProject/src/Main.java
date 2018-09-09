@@ -1,3 +1,4 @@
+import java.awt.Rectangle;
 
 public class Main {
 	public static void main(String[] args) {
@@ -13,5 +14,9 @@ public class Main {
 		// print new string
 		System.out.println(salute.length());
 		//print length of string. 
+		Rectangle box = new Rectangle(5, 5, 15, 50);
+		box.translate(-3,10);
+		System.out.println(box.getX());
+		
 	}
 }
