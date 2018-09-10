@@ -1,4 +1,9 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Rectangle;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
 
 public class Main {
 	public static void main(String[] args) {
@@ -11,15 +16,22 @@ public class Main {
 		// print new string
 		System.out.println(salute.length());
 		//print length of string. 
-		Rectangle box = new Rectangle(5, 5, 15, 50);
+		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		//We gon' make a box, translate it, access data and print it. 
+		Rectangle box = new Rectangle(5, 5, 150, 150);
 		box.translate(-3,10);
 		System.out.println(box.getX());
+		//using accessors and mutators for Character class
+		//in an if-then-else structure.
 		char ch = '5';
 		if (Character.isLetter(ch))
 			{System.out.println("this be a character");
 			}	
 		else
 			System.out.println("this not be a character");
-	}
 		
 	}
+		
+	
+		
+}
