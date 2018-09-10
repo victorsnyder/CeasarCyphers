@@ -1,10 +1,12 @@
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import java.awt.geom.Ellipse2D;
-
+import java.awt.geom.Line2D;
+import java.awt.geom.Point2D;
 public class Rectum extends JComponent
 {
 
@@ -22,6 +24,26 @@ public class Rectum extends JComponent
 			//imported and drew code for circle.
 			Ellipse2D.Double ellipse = new Ellipse2D.Double(20, 30, 500, 200);
 			g2.draw(ellipse);
+			// drawing strings, part of Graphics2D class. 
+			g2.drawString("Sup Bro", 200, 100);
+			//to color shapes:
+			//setColor works for outlines.
+			g2.setColor(Color.CYAN);
+			g2.draw(box);
+			//to fill it use method fill.
+			box.translate(30, 50);
+			g2.setColor(Color.RED);
+			g2.fill(box);
+			//Drawing lines; Import the Line2D class.
+			Line2D.Double line = new Line2D.Double(20, 20, 60, 80);
+			g2.draw(line);
+			// you can also draw it by using endpoints
+			// you have to import the Point2D class
+			Point2D.Double from = new Point2D.Double(50, 70);
+			Point2D.Double to = new Point2D.Double(80, 100);
+			
+			Line2D.Double segment = new Line2D.Double(from, to);
+			g2.draw(segment);
 	}
 	
 		
