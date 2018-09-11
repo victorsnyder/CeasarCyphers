@@ -11,7 +11,7 @@ public class Main {
 		
 		String salute = "Hey buddy.";
 		// var assignment
-		salute = salute.replace("buddy","loser");
+			salute = salute.replace("buddy","loser");
 		//used mutator "replace" to reassign the value of salute
 		System.out.println(salute);
 		// print new string
@@ -20,7 +20,7 @@ public class Main {
 		// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 		//We gon' make a box, translate it, access data and print it. 
 		Rectangle box = new Rectangle(5, 5, 150, 150);
-		box.translate(-3,10);
+			box.translate(-3,10);
 		System.out.println(box.getX());
 		//using accessors and mutators for Character class
 		//in an if-then-else structure.
@@ -43,13 +43,10 @@ public class Main {
 		System.out.println(counter.getValue());
 		//let's test out the cash register class I made..
 		DaRegister reggy = new DaRegister();
-			reggy.Purchase(20);
-			reggy.Payment(50);
+			reggy.PurchaseTax(10, true);
+			reggy.Payment(20);
+			
 		System.out.println(reggy.giveChange());
-		
-		
-		
-	
 		
 	}
 		

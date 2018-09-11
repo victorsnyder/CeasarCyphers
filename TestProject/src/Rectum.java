@@ -12,7 +12,7 @@ public class Rectum extends JComponent
 
 	public void paintComponent(Graphics g)
 	{
-			//Recover Graphics
+			//Recover Graphics2D
 			Graphics2D g2 = (Graphics2D) g;
 			
 			Rectangle box = new Rectangle(5, 5, 50, 50);
