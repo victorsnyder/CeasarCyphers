@@ -5,6 +5,7 @@ import java.awt.Rectangle;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
+
 public class Main {
 	public static void main(String[] args) {
 		
@@ -29,6 +30,21 @@ public class Main {
 			}	
 		else
 			System.out.println("this not be a character");
+		// I implemented a counter class!!  Here's me applying it. 
+		int clicks = 0;
+		
+		CounterPractice counter = new CounterPractice();
+		counter.click();
+		counter.click();
+		clicks = counter.getValue();
+		System.out.println(clicks);
+		// or..
+		counter.click();
+		System.out.println(counter.getValue());
+		
+		
+		
+	
 		
 	}
 		
