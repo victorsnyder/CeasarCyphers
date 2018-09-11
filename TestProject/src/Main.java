@@ -34,13 +34,18 @@ public class Main {
 		int clicks = 0;
 		
 		CounterPractice counter = new CounterPractice();
-		counter.click();
-		counter.click();
-		clicks = counter.getValue();
+			counter.click();
+			counter.click();
+			clicks = counter.getValue();
 		System.out.println(clicks);
 		// or..
-		counter.click();
+			counter.click();
 		System.out.println(counter.getValue());
+		//let's test out the cash register class I made..
+		DaRegister reggy = new DaRegister();
+			reggy.Purchase(20);
+			reggy.Payment(50);
+		System.out.println(reggy.giveChange());
 		
 		
 		
