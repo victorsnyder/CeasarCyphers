@@ -20,7 +20,7 @@ public class Rectum extends JComponent
 			box.translate(20, 40);
 			g2.draw(box);
 			//other way to draw le box
-			g2.drawRect(20, 20, 20, 20);
+			g2.drawRect(200, 200, 120, 220);
 			//imported and drew code for circle.
 			Ellipse2D.Double ellipse = new Ellipse2D.Double(20, 30, 500, 200);
 			g2.draw(ellipse);
@@ -48,17 +48,17 @@ public class Rectum extends JComponent
 	
 		
 	public static void main (String[] args) 
-	{
+	{	//create a frame as a "canvas".
 		JFrame frame = new JFrame();
-		
+		//set it's size.
 		frame.setSize(600, 500);
-		
+		//create an object of the type of your class.
 		Rectum component = new Rectum();
-		
+		//add the component to the empty frame
 		frame.add(component);
-		
+		//make it visible
 		frame.setVisible(true);
-		
+		//add the closing operation
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 				

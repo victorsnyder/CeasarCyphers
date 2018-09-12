@@ -48,6 +48,21 @@ public class Main {
 			
 		System.out.println(reggy.giveChange());
 		
+		//I can add the "main" method from the graphics class in this
+		//project and run it. 
+				//create a frame as a "canvas".
+				JFrame frame = new JFrame();
+				//set it's size.
+				frame.setSize(600, 500);
+				//create an object of the type of your class.
+				Rectum component = new Rectum();
+				//add the component to the empty frame
+				frame.add(component);
+				//make it visible
+				frame.setVisible(true);
+				//add the closing operation
+				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 	}
 		
 	

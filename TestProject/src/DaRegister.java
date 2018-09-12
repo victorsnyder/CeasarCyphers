@@ -12,7 +12,8 @@ public class DaRegister
 		payment = 0;
 		tax = 1.115;
 	}
-	//records purchase price
+	//records purchase price and determines whether the tax need be applied. 
+	//this is a static method
 	public void PurchaseTax(double amount, boolean isTaxable)
 	{
 		purchase = purchase + amount;
@@ -20,11 +21,13 @@ public class DaRegister
 		purchase = purchase * tax;
 	}
 	//records payment received
+	//static method
 	public void Payment(double amount)
 	{
 		payment = payment + amount;
 	}
 	//calculates & returns change and resets. 
+	//static method
 	public double giveChange()
 	{
 		double change = payment - purchase;
