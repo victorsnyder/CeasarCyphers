@@ -2,6 +2,8 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
+import java.util.Scanner;
+
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
@@ -71,7 +73,19 @@ public class Main {
 				frame2.setVisible(true);
 				frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 				//^^^works^^^, one component per frame.
+			//making a scanner	
+			Scanner cheese = new Scanner(System.in);
+			System.out.print("write something fool");
+			int num1 = cheese.nextInt();
+			System.out.print("write something else");
+			int num2 = cheese.nextInt();
+			int daNumber = num1 + num2;
+			Math.sqrt(daNumber);
 			
+		String cheeses = "Gouda";
+		String cheesed = "Swiss";
+			
+		System.out.print(cheeses + cheesed);
 	}
 		
 	
