@@ -1,4 +1,4 @@
-import java.awt.Graphics;
+
 import java.awt.Graphics2D;
 import java.awt.geom.Ellipse2D;
 import java.awt.Rectangle;
@@ -24,14 +24,14 @@ public class Car
 		Rectangle body = new Rectangle(xLeft, yTop + 10, 60, 10);
 		
 		//now the wheels	
-		Ellipse2D.Double frontWheel = new Ellipse2D.Double(xLeft + 10, yTop + 10, 5, 5);
-		Ellipse2D.Double rearWheel = new Ellipse2D.Double(xLeft + 50, yTop + 10, 5, 5);
+		Ellipse2D.Double frontWheel = new Ellipse2D.Double(xLeft + 7, yTop + 15, 15, 15);
+		Ellipse2D.Double rearWheel = new Ellipse2D.Double(xLeft + 40, yTop + 15, 15, 15);
 		
 		//now the outline for the top of the car		
-		Point2D.Double c1 = new Point2D.Double(xLeft + 20, yTop);
+		Point2D.Double c1 = new Point2D.Double(xLeft + 10, yTop+10);
 		Point2D.Double c2 = new Point2D.Double(xLeft + 25, yTop-5);
-		Point2D.Double c3 = new Point2D.Double(xLeft + 35, yTop-5);
-		Point2D.Double c4 = new Point2D.Double(xLeft + 40, yTop);
+		Point2D.Double c3 = new Point2D.Double(xLeft + 40, yTop-5);
+		Point2D.Double c4 = new Point2D.Double(xLeft + 45, yTop+10);
 		
 		//now we connect the points with lines:
 		Line2D.Double l1 = new Line2D.Double(c1, c2);

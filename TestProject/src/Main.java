@@ -62,7 +62,16 @@ public class Main {
 				frame.setVisible(true);
 				//add the closing operation
 				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
+				//we create and add a component from our CarComponent class.
+				//the evidence suggests that one cannot have more than one component per frame.
+				JFrame frame2 = new JFrame();
+				frame2.setSize(400,400);
+				CarComponent Suzies = new CarComponent();
+				frame2.add(Suzies);
+				frame2.setVisible(true);
+				frame2.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				//^^^works^^^, one component per frame.
+			
 	}
 		
 	
