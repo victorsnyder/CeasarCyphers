@@ -7,14 +7,18 @@ import javax.swing.JFrame;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
+//this class is basically one giant drawing class
 public class Rectum extends JComponent
 {
-
+//when creating on object of the "Rectum" class, I'll feed it no arguments
+//thus, It'll just run the method below, no questions asked. 
 	public void paintComponent(Graphics g)
 	{
 			//Recover Graphics2D
 			Graphics2D g2 = (Graphics2D) g;
 			
+			//everything in here is a local variable and/or operation. 
+			//it all dies when you close the frame. 
 			Rectangle box = new Rectangle(5, 5, 50, 50);
 			g2.draw(box);
 			box.translate(20, 40);
@@ -44,6 +48,8 @@ public class Rectum extends JComponent
 			
 			Line2D.Double segment = new Line2D.Double(from, to);
 			g2.draw(segment);
+			
+	
 	}
 	
 		
@@ -52,7 +58,7 @@ public class Rectum extends JComponent
 		JFrame frame = new JFrame();
 		//set it's size.
 		frame.setSize(600, 500);
-		//create an object of the type of your class.
+		//create an object of the type of your "Rectum" class.
 		Rectum component = new Rectum();
 		//add the component to the empty frame
 		frame.add(component);
